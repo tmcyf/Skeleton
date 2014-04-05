@@ -1,0 +1,4 @@
+.DS_Store
+cookbooks/**/*
+data_bags/users/*.json
+nodes/*.json

@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The base role for systems.",
+  "default_attributes": {
+    "authorization": {
+      "sudo": {
+        // everyone in the group sysadmin gets sudo rights
+        "groups": ["sysadmin"],
+        // the deploy user specifically gets sudo rights
+        "users": ["deploy"],
+        // whether a user with sudo rights has to enter their
+        // password when using sudo
+        "passwordless": true
+      }
+    },
+    "nginx": {
+      "version": "1.4.4",
+      "default_site_enabled": true,
+      "source": {
+        "modules": ["nginx::http_gzip_static_module", "nginx::http_ssl_module"]
+      }
+    }
+  },
+  "run_list": [
+    "recipe[nginx::source]",
+    "chef-solo-search",
+    "recipe[users::sysadmins]",
+    "recipe[sudo]"
+  ]
+}
