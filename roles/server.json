@@ -24,11 +24,12 @@
     }
   },
   "run_list": [
-    "recipe[nginx]",
     "chef-solo-search",
     "recipe[users::sysadmins]",
     "recipe[sudo]",
     "recipe[look-and-feel]",
-    "recipe[basic-security]"
+    "recipe[basic-security]",
+    "recipe[nginx]",
+    "recipe[postfix]"
   ]
 }

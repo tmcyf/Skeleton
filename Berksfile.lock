@@ -23,6 +23,11 @@
       "git": "https://github.com/edelight/chef-solo-search",
       "ref": "4079db540b9b2b00fb383cba8c30f24c2c3bfbb4"
     },
+    "postfix": {
+      "locked_version": "3.1.9",
+      "git": "https://github.com/opscode-cookbooks/postfix.git",
+      "ref": "f27480fa4ca551d25e3040d8e281700149e95d6c"
+    },
     "build-essential": {
       "locked_version": "2.0.0"
     },
