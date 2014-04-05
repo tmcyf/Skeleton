@@ -1,13 +1,6 @@
 # look-and-feel cookbook
 
-# Requirements
+Sets up the 'look-and-feel' of a fresh Ubuntu server. This includes:
 
-# Usage
-
-# Attributes
-
-# Recipes
-
-# Author
-
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+* custom MOTD
+* provision success message
