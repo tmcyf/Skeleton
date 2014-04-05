@@ -27,6 +27,7 @@
     "recipe[nginx]",
     "chef-solo-search",
     "recipe[users::sysadmins]",
-    "recipe[sudo]"
+    "recipe[sudo]",
+    "recipe[look-and-feel]"
   ]
 }
