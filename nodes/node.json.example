@@ -1,1 +1,18 @@
-{"run_list":[]}
+{
+  "environment":"production",
+  "user": {
+    "name": "deploy"
+  },
+  "authorization": {
+    "sudo": {
+      // the deploy user specifically gets sudo rights
+      // if you're using vagrant it's worth adding "vagrant"
+      // to this array
+      "users": ["deploy"]
+    }
+  },
+  "run_list": [
+    "role[server]",
+    "role[rails]"
+  ]
+}
