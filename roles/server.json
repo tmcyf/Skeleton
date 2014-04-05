@@ -24,7 +24,7 @@
     }
   },
   "run_list": [
-    "recipe[nginx::source]",
+    "recipe[nginx]",
     "chef-solo-search",
     "recipe[users::sysadmins]",
     "recipe[sudo]"
