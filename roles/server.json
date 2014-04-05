@@ -28,6 +28,7 @@
     "chef-solo-search",
     "recipe[users::sysadmins]",
     "recipe[sudo]",
-    "recipe[look-and-feel]"
+    "recipe[look-and-feel]",
+    "recipe[basic-security]"
   ]
 }
