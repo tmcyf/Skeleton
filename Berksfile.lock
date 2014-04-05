@@ -5,7 +5,7 @@
     },
     "nginx": {
       "locked_version": "2.5.1",
-      "git": "git://github.com/opscode-cookbooks/nginx.git",
+      "git": "https://github.com/opscode-cookbooks/nginx.git",
       "ref": "609b9191c95bf33430962c9e57f224fc00c51680"
     },
     "sudo": {
@@ -28,6 +28,16 @@
       "git": "https://github.com/opscode-cookbooks/postfix.git",
       "ref": "f27480fa4ca551d25e3040d8e281700149e95d6c"
     },
+    "rbenv": {
+      "locked_version": "0.7.3",
+      "git": "https://github.com/fnichol/chef-rbenv.git",
+      "ref": "0a3018634bafe58ad21c6ee271af015220e444b9"
+    },
+    "ruby_build": {
+      "locked_version": "0.8.1",
+      "git": "https://github.com/fnichol/chef-ruby_build.git",
+      "ref": "4d3361995a6953076951693eff1b326ab499fe1e"
+    },
     "build-essential": {
       "locked_version": "2.0.0"
     },
@@ -48,6 +58,9 @@
     },
     "ohai": {
       "locked_version": "1.1.12"
+    },
+    "java": {
+      "locked_version": "1.22.0"
     }
   }
 }

@@ -1,0 +1,7 @@
+package 'curl'
+package 'imagemagick'
+package 'libcurl3'
+package 'libcurl3-dev'
+package 'libmagickwand-dev'
+package 'libxslt-dev'
+package 'libpq-dev'
