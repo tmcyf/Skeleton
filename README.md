@@ -33,10 +33,24 @@ Run bundler:
 
 #### Setting up the server
 
+Create `deploy.json` in `data_bags/users` and copy the contents of `deploy.json.example`.
+
+Generate a new password:
+
+`openssl passwd -1 "yourpasswordhere"`
+
+Add your ssh public key to `ssh_keys`:
+
+`cat ~/.ssh/id_rsa.pub`
+
 Prepare the server with `knife solo`. This installs Chef on the server.
 
 `knife solo prepare <user>@<host/ip>`
 
-This will create `nodes/<host/ip>.json`.
+This will create `nodes/<host/ip>.json`. Copy the contents `node.json.example` into your host json file.
 
-*** Unfinished ***
+Then, install everything to provision the server to run Rails:
+
+`knife solo cook <user>@<host/ip>`
+
+Navigate over to the server IP and you should see the message "Server provisioned and ready to accept deployment!".
