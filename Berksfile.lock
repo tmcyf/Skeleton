@@ -3,11 +3,6 @@
     "runit": {
       "locked_version": "1.5.10"
     },
-    "nginx": {
-      "locked_version": "2.5.1",
-      "git": "https://github.com/opscode-cookbooks/nginx.git",
-      "ref": "609b9191c95bf33430962c9e57f224fc00c51680"
-    },
     "sudo": {
       "locked_version": "2.5.3",
       "git": "https://github.com/opscode-cookbooks/sudo.git",
@@ -46,18 +41,6 @@
     },
     "yum-epel": {
       "locked_version": "0.3.4"
-    },
-    "apt": {
-      "locked_version": "2.3.8"
-    },
-    "bluepill": {
-      "locked_version": "2.3.1"
-    },
-    "rsyslog": {
-      "locked_version": "1.12.2"
-    },
-    "ohai": {
-      "locked_version": "1.1.12"
     },
     "java": {
       "locked_version": "1.22.0"
