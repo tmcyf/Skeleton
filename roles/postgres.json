@@ -1,0 +1,40 @@
+{
+  "name": "postgres",
+  "description": "Configures Postgres",
+  "json_class": "Chef::Role",
+  "chef_type": "role",
+  "default_attributes": {
+    "postgresql":{
+      "users": [
+        {
+          "username": "deploy",
+          "password": "2corinth",
+          "superuser": true,
+          "createdb": true,
+          "login": true
+        }
+      ],
+      "databases": [
+        {
+          "name": "tmcyfdb",
+          "owner": "deploy",
+          "template": "template0",
+          "encoding": "utf8",
+          "locale": "en_US.UTF8"
+        },
+        {
+          "name": "deploy",
+          "owner": "deploy",
+          "template": "template0",
+          "encoding": "utf8",
+          "locale": "en_US.UTF8"
+        }
+      ]
+    }
+  },
+  "run_list": [
+    "recipe[postgresql]",
+    "recipe[postgresql::client]",
+    "recipe[postgresql::server]"
+  ]
+}

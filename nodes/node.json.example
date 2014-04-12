@@ -13,6 +13,7 @@
   },
   "run_list": [
     "role[server]",
+    "role[postgres]",
     "role[rails]"
   ]
 }

@@ -33,17 +33,25 @@
       "git": "https://github.com/fnichol/chef-ruby_build.git",
       "ref": "4d3361995a6953076951693eff1b326ab499fe1e"
     },
+    "postgresql": {
+      "locked_version": "0.13.3",
+      "git": "https://github.com/phlipper/chef-postgresql.git",
+      "ref": "fae090067b5aabf6b9805104772644008d4e431d"
+    },
     "build-essential": {
       "locked_version": "2.0.0"
     },
     "yum": {
-      "locked_version": "3.1.6"
+      "locked_version": "3.1.2"
     },
     "yum-epel": {
       "locked_version": "0.3.4"
     },
     "java": {
-      "locked_version": "1.22.0"
+      "locked_version": "1.20.0"
+    },
+    "apt": {
+      "locked_version": "2.3.8"
     }
   }
 }
