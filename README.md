@@ -19,13 +19,22 @@ Follow the instructions below to set up a server to host Ruby on Rails.
 
 #### Server Prereqs
 
-* Ubuntu 12.04 LTS
+* Ubuntu 12.04 LTSa
+* YF ssh keys
 
 #### Installation
 
+First you'll need to add the YF ssh keys to your machine. Obtain the keys and place them in the ~/.ssh directory. Then:
+
+`ssh-add ~/.ssh/yf_rsa`
+
+It'll ask you for a passphrase but you already know that, don't you?
+
+Once the identity is added, onwards~!
+
 Clone repo:
 
-`git clone [git clone url] skeleton`
+`git clone git@github.com:tmcyf/skeleton.git skeleton`
 
 Run bundler:
 
