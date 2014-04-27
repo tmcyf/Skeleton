@@ -5,10 +5,10 @@
   "chef_type": "role",
   "default_attributes": {
     "rbenv":{
-      "rubies" : "2.1.1",
-      "global" : "2.1.1",
+      "rubies" : "2.0.0-p451",
+      "global" : "2.0.0-p451",
       "gems" : {
-        "2.1.1": [{"name": "bundler"}]
+        "2.0.0-p451": [{"name": "bundler"}]
       }
     }
   },
