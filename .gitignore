@@ -1,4 +1,6 @@
 .DS_Store
+.vagrant/
+berks-cookbooks/
 cookbooks/**/*
 data_bags/users/*.json
 nodes/*.json
