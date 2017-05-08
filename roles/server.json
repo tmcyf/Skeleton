@@ -9,27 +9,17 @@
         // everyone in the group sysadmin gets sudo rights
         "groups": ["sysadmin"],
         // the deploy user specifically gets sudo rights
-        "users": ["deploy"],
+        "users": ["vagrant", "deploy"],
         // whether a user with sudo rights has to enter their
         // password when using sudo
         "passwordless": true
       }
-    },
-    "nginx": {
-      "version": "1.4.4",
-      "default_site_enabled": true,
-      "source": {
-        "modules": ["nginx::http_gzip_static_module", "nginx::http_ssl_module"]
-      }
     }
   },
   "run_list": [
-    "chef-solo-search",
-    "recipe[users::sysadmins]",
-    "recipe[sudo]",
-    "recipe[look-and-feel]",
-    "recipe[basic-security]",
-    "recipe[nginx]",
-    "recipe[postfix]"
+    "recipe[apt::default]",
+    "recipe[build-essential::default]",
+    "recipe[users]",
+    "recipe[sudo]"
   ]
 }
