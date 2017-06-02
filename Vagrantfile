@@ -39,6 +39,7 @@ Vagrant.configure("2") do |config|
     chef.data_bags_path = "data_bags"
     chef.nodes_path = "nodes"
     chef.roles_path = "roles"
+    chef.encrypted_data_bag_secret_key_path = ".chef/encrypted_data_bag_secret"
 
 
     chef.add_role "server"

@@ -14,12 +14,23 @@
         // password when using sudo
         "passwordless": true
       }
+    },
+    "apt": {
+      "unattended_upgrades": {
+        "enable": true,
+        "allowed_origins": [
+          "${distro_id} ${distro_codename}-security"
+        ],
+        "automatic_reboot": true,
+        "mail": "admin@tmcyf.org"
+      }
     }
   },
   "run_list": [
     "recipe[apt::default]",
+    "recipe[apt::unattended-upgrades]",
     "recipe[build-essential::default]",
-    "recipe[users]",
+    "recipe[server_users]",
     "recipe[sudo]"
   ]
 }

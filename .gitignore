@@ -1,5 +1,6 @@
 .DS_Store
 .vagrant/
+.chef/encrypted_data_bag_secret
 berks-cookbooks/
 cookbooks/**/*
 data_bags/users/*.json
