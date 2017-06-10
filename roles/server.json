@@ -22,7 +22,8 @@
           "${distro_id} ${distro_codename}-security"
         ],
         "automatic_reboot": true,
-        "mail": "admin@tmcyf.org"
+        "mail": "admin@tmcyf.org",
+        "random_sleep": "10"
       }
     }
   },
